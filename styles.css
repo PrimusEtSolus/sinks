@@ -22,15 +22,27 @@ h2{
     background-color:hsl(0, 0%, 25%);
     overflow: hidden;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 .navbar a{
     color: aliceblue;
     text-decoration: none;
     padding: 12.5px;
     display: block;
+    font-size: 20px;
+    padding: 7.5px;
 }
 .navbar a:hover{
     background-color: hsl(0, 0%, 10%);
+    text-decoration: overline underline;
+    font-size: 25px;
+    padding:8px;
+    transition: 0.2s;
+}
+.navbar li{
+    float: left;
+    display: inline;
 }
 .navbar li{
     float: left;
