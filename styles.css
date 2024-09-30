@@ -91,6 +91,14 @@ table {
     margin-left: auto;
     margin-right: auto;
     width: 420px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+    transition:1.5s;
+}
+.image1:hover{
+    width: 450px;
+    border-radius: 5px;
 }
 
 .image2{
@@ -99,13 +107,33 @@ table {
     margin-left: auto;
     margin-right: auto;
     width: 420px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+    transition:1.5s;
 }
-
+.image2:hover{
+    width: 450px;
+    border-radius: 5px;
+}
 .image3{
     display: block; 
     border-radius: 6.5%;
     margin-left: auto;
     margin-right: auto;
     width: 420px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+    transition: box-shadow 2s;
+    transition:1.5s;
 }
+.image3:hover{
+    width: 450px;
+    border-radius: 5px;
+}
+img:hover{
+    box-shadow: 0 0 2px 1px rgba(50, 57, 59, 0.5);
+}
+
 
