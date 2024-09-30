@@ -24,13 +24,23 @@ h2 {
 }
 
 p {
-    text-align: center;
+    display: block;
+    text-align: justify ;
     align-items: center;
-    margin: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     padding: 0.5;
     font-size: 1.13rem;
     color:black;
+    line-height: 150%;
 }
+
+.entry-p{
+    text-align: center;
+}
+
 ul{
     list-style: none;
 }
@@ -64,6 +74,11 @@ ul{
     display: inline;
 }
 
+.box-width-med.padding-sm, p.padding-sm {
+    padding: 1em;
+    text-align: center;
+}
+
 .col-1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -81,20 +96,81 @@ ul{
     margin-bottom: .1em;
     overflow: hidden;
 }
+
+.col-1 img{
+    border-radius: 5px;
+    width: 90%;
+    height: 100%;
+    transition: 1.5s;
+}
+
+.col-1 img:hover{
+    border-radius: 30px;
+    width: 100%;
+    height: 110%;
+    box-shadow: 0 0 25px 10px hsla(0, 0%, 15%, 0.5);
+}
+
+*, :after, :before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.text-content {
+    padding: 3em 0;
+    max-width: 860px;
+    margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    width: 92%;
+}
+
+.text-content-2nd, .text-content.text-content-2nd {
+    padding: 0 0 5em 0;
+}
+
 @media screen and (min-width: 1200px) {
-    .col-1 li {
-        width: 33%;
+    .text-content {
+        width: 55%;
+    }
+}
+@media screen and (min-width: 960px) {
+    .text-content {
+        padding: 4em 0;
+    }
+}
+.text-content-2nd, .text-content.text-content-2nd {
+    padding: 0 0 5em 0;
+}
+@media screen and (min-width: 1200px) {
+    .text-content {
+        width: 55%;
+    }
+}
+@media screen and (min-width: 960px) {
+    .text-content {
+        padding: 4em 0;
+    }
+}
+@media screen and (min-width: 960px) {
+    .text-content {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 640px) {
+    .text-content, .wider {
+        width: 81%;
+    }
+}
+@media screen and (min-width: 568px) {
+    .text-content {
+        width: 88%;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .col-1 li {
-        width: 35%;
-        margin: 1em 2%;
-    }
-}
-@media screen and (min-width: 767px) {
-    .col-1 li {
-        width: 40%;
-    }
-}
