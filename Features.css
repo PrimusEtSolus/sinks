@@ -98,3 +98,21 @@ p {
 .content:hover{
     opacity:1;
 }
+
+.content h2{
+    font-size: 50px;
+    color: rgb(49, 35, 17);
+    margin-bottom: 15px;
+}
+
+.content p {
+    font: 30px;
+    color: #1d0707;
+}
+.content >*{
+    transform:translateY(45px);
+    transition: transform 0.6s;
+}
+.content:hover > *{
+    transform: translateY(0px);
+}
